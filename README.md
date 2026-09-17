@@ -207,19 +207,19 @@ The project demonstrates how AI can be integrated into a practical application w
 📱 Mobile UI Optimization — Improve the camera workflow and layout for mobile devices.
 <br>
 📚 Key Concepts Demonstrated
-This project demonstrates practical implementation of:
-Optical Character Recognition (OCR)
-Local Large Language Models (LLMs)
-Prompt Engineering
-Structured JSON Generation
-REST API Integration
-Streamlit Application Development
-SQLite Database Management
-Image BLOB Storage
-Human-in-the-Loop AI
-Session State Management
-Local AI Inference
-Image Processing
+This project demonstrates practical implementation of:<br>
+Optical Character Recognition (OCR)<br>
+Local Large Language Models (LLMs)<br>
+Prompt Engineering<br>
+Structured JSON Generation<br>
+REST API Integration<br>
+Streamlit Application Development<br>
+SQLite Database Management<br>
+Image BLOB Storage<br>
+Human-in-the-Loop AI<br>
+Session State Management<br>
+Local AI Inference<br>
+Image Processing<br>
 <br>
 
 👨‍💻 Author
