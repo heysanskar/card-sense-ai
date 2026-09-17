@@ -97,114 +97,114 @@ This creates a human-in-the-loop verification process, ensuring that the user ha
 5. 💾 Database Storage
 After verification, the application stores the finalized contact information and original front/back card images in a local SQLite database.
 <br>
-🛠️ Tech Stack
-Technology	Purpose
-Python	Application development
-Streamlit	Web interface
+🛠️ Tech Stack<br>
+Technology	Purpose<br>
+Python	Application development<br>
+Streamlit	Web interface<br>
 EasyOCR	Text extraction from card images
-OpenCV	Image decoding and processing
-Ollama	Local LLM runtime
-Phi-3	AI-based information extraction
-SQLite	Local contact database
-NumPy	Image byte processing
-Pillow	Image handling and display
-Requests	Communication with Ollama API
+OpenCV	Image decoding and processing<br>
+Ollama	Local LLM runtime<br>
+Phi-3	AI-based information extraction<br>
+SQLite	Local contact database<br>
+NumPy	Image byte processing<br>
+Pillow	Image handling and display<br>
+Requests	Communication with Ollama API<br>
 
 <br>
-📂 Project Structure
-card-sense-ai/
+📂 Project Structure<br>
+card-sense-ai/<br>
 │
-├── app.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-└── LICENSE
+├── app.py<br>
+├── requirements.txt<br>
+├── README.md<br>
+├── .gitignore<br>
+└── LICENSE<br>
 
 The SQLite database is generated locally when the application runs and should not be committed to GitHub.
 <br>
-⚙️ Installation
-📋 Prerequisites
-Make sure you have:
-Python 3.9+
-Ollama
-Git
-1. Clone the Repository
-git clone https://github.com/YOUR_USERNAME/card-sense-ai.git
-cd card-sense-ai
+⚙️ Installation<br>
+📋 Prerequisites<br>
+Make sure you have:<br>
+Python 3.9+<br>
+Ollama<br>
+Git<br>
+1. Clone the Repository<br>
+git clone https://github.com/YOUR_USERNAME/card-sense-ai.git<br>
+cd card-sense-ai<br>
 
-2. Create a Virtual Environment
-python -m venv venv
+2. Create a Virtual Environment<br>
+python -m venv venv<br>
 
-Windows
-venv\Scripts\activate
+Windows<br>
+venv\Scripts\activate<br>
 
-macOS / Linux
-source venv/bin/activate
+macOS / Linux<br>
+source venv/bin/activate<br>
 
-3. Install Python Dependencies
-pip install -r requirements.txt
+3. Install Python Dependencies<br>
+pip install -r requirements.txt<br>
 
-4. Install the Phi-3 Model
-Make sure Ollama is installed and running.
-Download the Phi-3 model:
+4. Install the Phi-3 Model<br>
+Make sure Ollama is installed and running.<br>
+Download the Phi-3 model:<br>
 
-ollama pull phi3
+ollama pull phi3<br>
 
-Verify that the model is available:
-ollama list
+Verify that the model is available:<br>
+ollama list<br>
 
-5. Run the Application
-streamlit run app.py
+5. Run the Application<br>
+streamlit run app.py<br>
 
-The application will open in your browser.
+The application will open in your browser.<br>
 <br>
-🔒 Privacy
-CardSense AI follows a local-first approach.
-The application uses:
+🔒 Privacy<br>
+CardSense AI follows a local-first approach.<br>
+The application uses:<br>
 
-🔍 Local EasyOCR processing
-🤖 Local Phi-3 inference through Ollama
-💾 Local SQLite storage
-🏠 Local application processing
-No external AI API is required for the core extraction workflow.
-⚠️ Users should protect the local SQLite database because it may contain personal contact information. Do not commit real contact data or business-card images to a public repository.
+🔍 Local EasyOCR processing<br>
+🤖 Local Phi-3 inference through Ollama<br>
+💾 Local SQLite storage<br>
+🏠 Local application processing<br>
+No external AI API is required for the core extraction workflow.<br>
+⚠️ Users should protect the local SQLite database because it may contain personal contact information. Do not commit real contact data or business-card images to a public repository.<br>
 <br>
-🎯 Project Objective
-The objective of CardSense AI is to automate the process of converting physical business cards into digital contact records.
+🎯 Project Objective<br>
+The objective of CardSense AI is to automate the process of converting physical business cards into digital contact records.<br>
 Instead of manually entering information from every card, CardSense AI combines:
 
-OCR → Local LLM → Structured JSON → Human Verification → Database Storage
+OCR → Local LLM → Structured JSON → Human Verification → Database Storage<br>
 
-The project demonstrates how AI can be integrated into a practical application while keeping the user involved in verifying AI-generated information.
+The project demonstrates how AI can be integrated into a practical application while keeping the user involved in verifying AI-generated information.<br>
 
 <br>
-⭐ Key Highlights
-🔍 OCR-based text extraction using EasyOCR
-🤖 Local LLM integration using Phi-3 and Ollama
-🧠 Prompt engineering for structured information extraction
-📋 Conversion of unstructured OCR text into JSON
-✏️ Human verification before database insertion
-💾 SQLite-based persistent contact storage
-🖼️ Storage of original front and back card images
-📸 Camera and file-upload workflows
-🗄️ CRM-style contact management interface
-🔐 Local-first AI processing
+⭐ Key Highlights<br>
+🔍 OCR-based text extraction using EasyOCR<br>
+🤖 Local LLM integration using Phi-3 and Ollama<br>
+🧠 Prompt engineering for structured information extraction<br>
+📋 Conversion of unstructured OCR text into JSON<br>
+✏️ Human verification before database insertion<br>
+💾 SQLite-based persistent contact storage<br>
+🖼️ Storage of original front and back card images<br>
+📸 Camera and file-upload workflows<br>
+🗄️ CRM-style contact management interface<br>
+🔐 Local-first AI processing<br>
 <br>
 🔮 Future Improvements
-🔎 Search & Filter Contacts — Search contacts by name, company, email, phone, or business sector.
-✏️ Edit Existing Contacts — Update contact information directly from the CRM vault.
-🗑️ Delete Contacts — Remove outdated or unwanted contacts.
-🔄 Duplicate Detection — Identify potential duplicate contacts using name, company, email, and phone number.
-📤 Export Contacts — Export contact information to CSV or Excel.
-📇 vCard Export — Generate .vcf files for importing contacts into phone address books.
-🏷️ Advanced Contact Tagging — Add custom tags and categories for better organization.
-📊 CRM Analytics Dashboard — Display statistics such as contacts by sector and recently added contacts.
-🌐 Multi-language OCR — Support business cards containing multiple languages.
-🧠 Improved Image Preprocessing — Add image enhancement, perspective correction, noise reduction, and automatic card cropping.
-🤖 Improved AI Validation — Add stronger validation for incomplete or ambiguous OCR results.
-🔐 User Authentication — Add user accounts and user-specific contact databases.
-🔒 Database Security — Add encryption and stronger protection for locally stored contact information.
-📱 Mobile UI Optimization — Improve the camera workflow and layout for mobile devices.
+🔎 Search & Filter Contacts — Search contacts by name, company, email, phone, or business sector.<br>
+✏️ Edit Existing Contacts — Update contact information directly from the CRM vault.<br>
+🗑️ Delete Contacts — Remove outdated or unwanted contacts.<br>
+🔄 Duplicate Detection — Identify potential duplicate contacts using name, company, email, and phone number.<br>
+📤 Export Contacts — Export contact information to CSV or Excel.<br>
+📇 vCard Export — Generate .vcf files for importing contacts into phone address books.<br>
+🏷️ Advanced Contact Tagging — Add custom tags and categories for better organization.<br>
+📊 CRM Analytics Dashboard — Display statistics such as contacts by sector and recently added contacts.<br>
+🌐 Multi-language OCR — Support business cards containing multiple languages.<br>
+🧠 Improved Image Preprocessing — Add image enhancement, perspective correction, noise reduction, and automatic card cropping.<br>
+🤖 Improved AI Validation — Add stronger validation for incomplete or ambiguous OCR results.<br>
+🔐 User Authentication — Add user accounts and user-specific contact databases.<br>
+🔒 Database Security — Add encryption and stronger protection for locally stored contact information.<br>
+📱 Mobile UI Optimization — Improve the camera workflow and layout for mobile devices.<br>
 <br>
 📚 Key Concepts Demonstrated
 This project demonstrates practical implementation of:<br>
