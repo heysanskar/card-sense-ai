@@ -1,4 +1,5 @@
 📇 CardSense AI
+<br>
 Local AI-Powered Business Card Scanner & CRM
 CardSense AI is a local AI-powered business card digitization and CRM application built with Streamlit.
 It allows users to capture or upload business card images, extract text using EasyOCR, and use Phi-3 through Ollama to intelligently convert the extracted text into structured contact information.
