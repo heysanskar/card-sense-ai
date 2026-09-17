@@ -195,9 +195,9 @@ Human-in-the-loop AI
 Session state management
 Local AI inference
 👨‍💻 Author
-Your Name
-GitHub: https://github.com/YOUR_USERNAME
+Sanskar Aman
+GitHub: https://github.com/heysanskar
 
-LinkedIn: https://www.linkedin.com/in/YOUR_PROFILE
+LinkedIn: https://www.linkedin.com/in/sanskar-a-881719248/
 
 ⭐ If you find this project useful, consider giving it a star!
