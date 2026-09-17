@@ -221,9 +221,13 @@ Session State Management
 Local AI Inference
 Image Processing
 <br>
+
 👨‍💻 Author
+
 Sanskar Aman
+
 GitHub: https://github.com/heysanskar
+
 LinkedIn: https://www.linkedin.com/in/sanskar-a-881719248/
 
 <br>
