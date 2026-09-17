@@ -291,5 +291,9 @@ Sanskar Aman
 GitHub: https://github.com/heysanskar<br>
 LinkedIn: https://www.linkedin.com/in/sanskar-a-881719248/<br>
 
+<img width="1486" height="746" alt="Screenshot 2026-09-17 225502" src="https://github.com/user-attachments/assets/f727b6a2-be6d-41e0-9cbe-f22921c171c0" />
+<img width="1498" height="781" alt="Screenshot 2026-09-17 225426" src="https://github.com/user-attachments/assets/20d26611-e13b-4bfb-ab23-8b5c4ec58cd4" />
+<img width="1487" height="776" alt="Screenshot 2026-09-17 225443" src="https://github.com/user-attachments/assets/133f67c1-224f-4a8e-ac70-b23491f0d622" />
+
 <br>
 ⭐ If you find this project useful, consider giving it a star!
